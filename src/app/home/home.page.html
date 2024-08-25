@@ -1,32 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Blank </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" scrollY="false">
+  <div class="relative w-full h-full">
+    <app-map class="absolute top-0 left-0 w-full h-full z-0"></app-map>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div
+      class="absolute bottom-0 left-0 w-full h-[50%] flex justify-center items-center z-10"
+    >
+      <div class="bg-base-100 w-full h-full shadow-xl rounded-tl-3xl">
+        <div class="flex flex-col justify-center items-center p-4 w-full">
+          <label class="font-bold" style="font-family: 'DM Sans', sans-serif"
+            >Selecciona un destino</label
+          >
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>
-      Start with Ionic
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://ionicframework.com/docs/components"
-        >UI Components</a
-      >
-    </p>
-  </div>
+          <div class="flex flex-row justify-center items-center w-full mt-4">
+            <div class="flex justify-center items-center w-full">
+              <button class="btn">Hotel</button>
+            </div>
 
-  <div class="flex justify-center items-center w-full">
-    <label class="font-bold">Esta es la prueba con tailwind</label>
+            <div class="flex justify-center items-center w-full">
+              <button class="btn">Restaurante</button>
+            </div>
 
-    <button class="btn">Enviar</button>
+            <div class="flex justify-center items-center w-full">
+              <button class="btn">Bar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>
