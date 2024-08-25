@@ -27,5 +27,10 @@
 }
 
 .rounded-tl-3xl {
-  border-top-left-radius: 1.5rem; /* Puedes ajustar el valor según tus necesidades */
+  border-top-left-radius: 1.5rem;
+}
+
+.selected {
+  background-color: #6347eb;
+  color: white;
 }

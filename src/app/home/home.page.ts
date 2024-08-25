@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  selectedButton: string = '';
 
   constructor() {}
 
+  selectButton(button: string) {
+    this.selectedButton = button;
+  }
 }
