@@ -1,0 +1,78 @@
+<ion-content [fullscreen]="true" class="login ion-padding">
+  <ion-row class="row-styles"> </ion-row>
+
+  <ion-row class="ion-text-center mt-16">
+    <ion-col>
+      <h1 class="font-family title-styles">Iniciar sesión</h1>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-text-center row-sub">
+    <ion-col>
+      <div class="contenedor-sub">
+        <ion-label class="font-family label-sub text-black"
+          >Bienvenido, ingresa tus credenciales para ingresar.
+          nuevamente</ion-label
+        >
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="input-container ion-justify-content-center">
+    <ion-col class="col-image" size="4">
+      <img class="image-size" src="../../../../assets/icon/mail.png" />
+    </ion-col>
+    <ion-col size="8">
+      <ion-input
+        class="text-black"
+        [(ngModel)]="email"
+        placeholder="correo@gmail.com"
+      >
+      </ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="input-container-password ion-justify-content-center">
+    <ion-col class="col-image" size="4">
+      <img class="image-size" src="../../../../assets/icon/password.png" />
+    </ion-col>
+    <ion-col size="8">
+      <ion-input
+        class="text-black"
+        [(ngModel)]="password"
+        placeholder="********"
+      >
+      </ion-input>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-text-center row-button-login">
+    <ion-col>
+      <button
+        [disabled]="!email || !password"
+        class="button-login"
+        (click)="redirectToDashboard()"
+      >
+        Continuar
+      </button>
+    </ion-col>
+  </ion-row>
+  <!-- 
+  <ion-row class="ion-text-center row-forgot">
+    <ion-col>
+      <a class="forgot-text underline text-blue-500"
+        >¿Olvidaste tu contraseña?</a
+      >
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-text-center row-new-account">
+    <ion-col>
+      <a
+        (click)="redirectRegister()"
+        class="forgot-text underline text-blue-500"
+        >¿Aún no tienes una cuenta?</a
+      >
+    </ion-col>
+  </ion-row> -->
+</ion-content>

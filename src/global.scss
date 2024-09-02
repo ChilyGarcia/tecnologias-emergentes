@@ -36,6 +36,16 @@
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
 
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@media (max-width: 767px) {
+  ion-content.login {
+    --background: url(./assets/images/background.png) 0 0/100% 100% no-repeat;
+  }
+}
 
 @tailwind base;
 @tailwind components;

@@ -1,0 +1,122 @@
+.icon-styles {
+  width: 80px;
+}
+
+.row-styles {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.row-title {
+  justify-content: center;
+  align-items: center;
+}
+
+.row-title {
+  margin-top: 5px;
+}
+
+.row-sub {
+  margin-top: 20px;
+}
+
+.font-family {
+  font-family: Poppins-Bold;
+}
+
+.title-styles {
+  color: #fc2f2f;
+}
+
+.label-sub {
+  width: 220px;
+  height: 80px;
+  font-size: 15px;
+}
+
+.input-container {
+  border-radius: 15px;
+  margin-top: 50px;
+  background: #fff8f8;
+}
+
+.input-container-password {
+  border-radius: 15px;
+  margin-top: 35px;
+  background: #fff8f8;
+}
+
+.image-size {
+  width: 25px;
+}
+.col-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-forgot {
+  margin-top: 20px;
+}
+
+.row-new-account {
+  margin-top: 10px;
+}
+
+.forgot-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.button-login {
+  font-family: Poppins-bold;
+  color: white;
+  background-color: #fc2f2f;
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.row-button-login {
+  margin-top: 25px;
+}
+
+.row-access {
+  margin-top: 20px;
+}
+
+.contenedor-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-account {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.button-account-google {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.icon-account-styles {
+  width: 20px;
+}
+
+.ion-text-center .button-account-google {
+  float: right;
+}
+
+.ion-text-center .button-account {
+  float: left;
+}
+
+.button-login:disabled {
+  background-color: #fc2f2f5e;
+}
