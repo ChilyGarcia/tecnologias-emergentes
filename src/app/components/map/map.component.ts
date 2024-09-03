@@ -20,6 +20,13 @@ export class MapComponent implements AfterViewInit, OnInit {
   currentPosition: L.LatLng | undefined;
   markers: L.Marker[] = [];
 
+  private customIcon = L.icon({
+    iconUrl: 'assets/icon/marker-icon.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+  });
+
   ngOnInit() {}
 
   ngAfterViewInit() {
@@ -55,7 +62,7 @@ export class MapComponent implements AfterViewInit, OnInit {
     this.clearMarkers();
 
     const radius = 5000;
-    const cityCoordinates = { lat: 7.8939, lng: -72.5079 }; 
+    const cityCoordinates = { lat: 7.8939, lng: -72.5079 };
 
     let overpassQuery = '';
     if (category === 'hotel') {
@@ -84,7 +91,9 @@ export class MapComponent implements AfterViewInit, OnInit {
 
   addMarker(position: L.LatLng, title: string) {
     if (this.map) {
-      const marker = L.marker(position).addTo(this.map).bindPopup(title);
+      const marker = L.marker(position, { icon: this.customIcon })
+        .addTo(this.map)
+        .bindPopup(title);
       this.markers.push(marker);
     }
   }

@@ -18,6 +18,6 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/pages/authentication/register']);
   }
   redirectToDashboard() {
-    this.router.navigate(['/pages/dashboard/home']);
+    this.router.navigate(['/home']);
   }
 }
